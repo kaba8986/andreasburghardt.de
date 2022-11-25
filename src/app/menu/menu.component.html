@@ -4,12 +4,13 @@
 
 
 
-    <img *ngIf="!darkMode" routerLink="/" src="assets/logo_white.png" alt="">
-    <img *ngIf="darkMode" routerLink="/" src="assets/logo_dark.png" alt="">
+    <img routerLink="/" *ngIf="!darkMode" src="assets/logo_white.png" alt="">
+    <img routerLink="/" *ngIf="darkMode" src="assets/logo_dark.png" alt="">
     <div [class.darkLinks]="darkMode">
         <a routerLink="/">Home</a>
-        <a href="#">Curriculum</a>
-        <a href="#">Projects</a>
+        <!-- <a href="#">Curriculum</a> -->
+        <!-- <a href="#">Projects</a> -->
+        <a routerLink="/data-protection">Data protection</a>
         <a routerLink="/imprint">Imprint</a>
     </div>
 </header>
